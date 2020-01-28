@@ -1,0 +1,42 @@
+ECCEZIONE
+VARIAZIONE ALLA REGOLA, AL FLUSSO REGOLARE DEL PROGRAMMA.
+
+L'ECCEZIONE è UNA CLASSE
+
+EXCEPTION è LA CLASSE BASE CHE CONTIENE LE INFORMAZIONI DI SEGNALAZIONE DEL PROBLEMA CHE HA INTERROTTO IL PROGRAMMA
+CONTIENE:
+  - codice errore univoco che identifica l'interruzione
+  - descrizione errore: stringa che lo riporta in modo esteso
+  - stack trace: log di una serie di chiamate in catena, con la riga di codice, dove ogni chiamata si è svolta
+
+Il metodo throws scatena un Exception
+public float somma(float op1, float op2) throws Exception{
+
+}
+
+Scatenare un eccezione vuol dire interrompere il flusso.
+Non si fa un eccezione direttamente successiva ma si esegue un istruzione che si trova da un'altra parte
+
+COME GESTIRE UN ECCEZIONE
+
+try (ParseException ex){
+		istruzioneChePuòRilanciareEccezione1;
+		istruzioneChePuòRilanciareEccezione2;
+		istruzioneChePuòRilanciareEccezione3;
+}
+catch (ParseException ex){
+		istruzioneCheGestisceEccezione1;
+}
+catch (Exception ex){
+		istruzioneCheGestisceEccezione2;
+}
+finally{
+		istruzioneEseguiteInCodaAdEntrambiIBlocchiPrecedenti;
+}
+
+Il blocco catch tra tonde rappresenta il filtro.
+In prima istanza viene eseguito il primo catch, in cui deve essere posta un'eccezione derivata dalle successive.
+	ParseException è un'eccezione derivata da Exception
+Per derivata si intende molto generica.
+
+FARE UN METODO CHE VIENE CHIAMATO 5 VOLTE DAL MAIN CREANDO 5 ECCEZIONI.
