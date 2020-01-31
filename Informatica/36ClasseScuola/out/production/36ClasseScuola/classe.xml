@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classescuola name="4AInf">
+	<allievo cognome="Rossi" nome="Piero">
+		<informatica>7</informatica>
+		<matematica>7</matematica>
+		<storia>8</storia>
+	</allievo>
+	<allievo cognome="Craccp" nome="Coiud">
+		<informatica>7</informatica>
+		<matematica>9</matematica>
+		<storia>8</storia>
+	</allievo>
+	<allievo cognome="Cimbala" nome="Dugongo">
+		<informatica>7</informatica>
+		<matematica>7</matematica>
+		<storia>5</storia>
+	</allievo>
+</classescuola>
