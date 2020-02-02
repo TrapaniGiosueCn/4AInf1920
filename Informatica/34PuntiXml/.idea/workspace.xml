@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60e91ddc-ac6c-487b-81b8-9eac4e069441" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../36ClasseScuola/36ClasseScuola.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../37Bicicletta/37Bicicletta.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Tpsit/2Campana/002_campana.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Tpsit/3Random/3Random.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Tpsit/4ThreadGaraSommatore/4ThreadGaraSommatore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jaxb_api_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jaxb_api_2_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/34PuntiXml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/34PuntiXml.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/34libreriaXmlPunti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/34libreriaXmlPunti.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMLTablePaint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLTablePaint.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jaxb-api-2.3.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jaxb-api-2.3.0/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/34PuntiXml/punti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/34PuntiXml/punti.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/itis/cuneo/backend/Percorso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/itis/cuneo/backend/Percorso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/itis/cuneo/backend/Punto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/itis/cuneo/backend/Punto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/itis/cuneo/frontend/GraficoGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/itis/cuneo/frontend/GraficoGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/punti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/punti.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../35PlaylistXml/out/production/35PlaylistXml/it/itis/cuneo/Playlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../35PlaylistXml/out/production/35PlaylistXml/it/itis/cuneo/Playlist.class" afterDir="false" />
-    </list>
+    <list default="true" id="60e91ddc-ac6c-487b-81b8-9eac4e069441" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jaxb-api-2.3.0.jar!/" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -169,10 +149,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="620" y="304" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1580281376348" />
-    <state x="473" y="156" key="FileChooserDialogImpl" timestamp="1580282381903">
+    <state x="473" y="156" key="FileChooserDialogImpl" timestamp="1580478344654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="473" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580282381903" />
+    <state x="473" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580478344654" />
     <state width="723" height="210" key="GridCell.Tab.0.bottom" timestamp="1580477618336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -205,10 +185,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580335755534" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1580335592342">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1580478346812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580335592342" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580478346812" />
     <state x="477" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1580280813715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
