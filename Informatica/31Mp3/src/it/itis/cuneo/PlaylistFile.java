@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PlaylistFile {
 
-    public static final String FILE_PATH="C:\\Users\\Anna\\Desktop\\";
+    public static final String FILE_PATH="C:\\Users\\gio\\Desktop\\";
     public static final String FILE_NAME="playlist.txt";
     public static final String SEPARATOR=" ";
 

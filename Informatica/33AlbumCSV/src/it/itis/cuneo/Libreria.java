@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Libreria {
-    public static final String FILE_NAME = "C:\\Users\\Anna\\Desktop\\033AlbumCSV\\libreria.csv";
+    public static final String FILE_NAME = "C:\\Users\\gio\\Desktop\\33AlbumCSV\\libreria.csv";
     public static final String SEPARATOR = ",";
 
     private List<Album> aAlbum;
