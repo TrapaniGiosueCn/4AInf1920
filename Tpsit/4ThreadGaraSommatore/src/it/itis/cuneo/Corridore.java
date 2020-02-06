@@ -1,41 +1,31 @@
 package it.itis.cuneo;
 
-/**
- * Created by inf.trapanig0312 on 30/01/2020.
- */
 public class Corridore extends Thread {
-    public static final int MIN = 0;
-    public static final int MAX = 2;
-    public static final int ARRIVO = 10;
-    public static final int DELAY_MIN = 500;
-    public static final int DELAY_MAX = 1000;
-    private String nome;
-    private int somma;
+    private int numero;
 
-    public Corridore(){
-        this.somma = 0;
+    public Numero() {
     }
 
-    public Corridore(String nome){
-        this.nome =nome;
-        this.somma = 0;
+    public Numero(int numero) {
+        this.numero = numero;
     }
 
-    public void run(){
-        int r = 0;
-        int delay = 0;
-
-        while(this.somma<= ARRIVO){
-            delay = (int) Math.round((Math.random()*(DELAY_MAX-DELAY_MIN))+DELAY_MIN);
+    @Override
+    public void run() {
+        int num = numero ;
+        while(numero == 1){
+            int delay = (int) Math.round((Math.random() * (1000 - 500))+ 500);
             try {
                 this.sleep(delay);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            r =(int) Math.round((Math.random()*(MAX-MIN))+MIN);
-            this.somma += r;
-            System.out.println(this.nome + ": valore singolo:" + r +" - somma totoale:"+ this.somma + " - ritardo:" +delay+"ms");
+            for(int cnt=0;cnt<numero;cnt++){
+                if(numero%cnt == 0){
+                    numero = numero/cnt;
+                }
+            }
         }
-        System.out.println(this.nome + ": HO TERMINATO");
+        System.out.println(num + ": ha terminato");
     }
 }
