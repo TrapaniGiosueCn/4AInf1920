@@ -1,6 +1,3 @@
-/**
- * Created by inf.trapanig0312 on 20/02/2020.
- */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,6 +6,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+
+import static javafx.application.Platform.exit;
 
 public class Finestra extends  JFrame implements ActionListener {
     public static final String PATH_FILE_CSV ="src\\griglia.csv";
@@ -23,16 +22,18 @@ public class Finestra extends  JFrame implements ActionListener {
     JButton button7;
     JButton button8;
     JButton button9;
+    JButton isYourRound;
     JButton newGame;
+    private int cntComputer = 0;
     private String cont;
 
     public Finestra()
     {
-        cont = "";
-        setTitle("Tris");
+        cont = "O";
+        setTitle("Tris con IA");
         initComponets();
         setLocation(750, 250);
-        setSize(400,400);
+        setSize(400,500);
         setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -70,6 +71,12 @@ public class Finestra extends  JFrame implements ActionListener {
         button8.addActionListener(this);
         button9.addActionListener(this);
         container.add(panel);
+
+        JPanel sPanel = new JPanel();
+        isYourRound = new JButton("Tocca a te!");
+        sPanel.add(isYourRound);
+        isYourRound.addActionListener(this);
+        container.add(sPanel, BorderLayout.SOUTH);
     }
 
     @Override
@@ -103,21 +110,20 @@ public class Finestra extends  JFrame implements ActionListener {
             controllo();
         } else if (e.getSource() == newGame){
             nuovaPartita();
+        } else if (e.getSource() == isYourRound){
+            enableB();
+            computer();
         }
     }
 
     private String tris(String string) {
 
         String ret = string;
-        if (cont == "") {
+        if (cont == "" || cont == "O") {
             if (string == ""){
                 ret = "X";
                 cont = "X";
-            }
-        } else if (cont == "X"){
-            if (string == ""){
-                ret = "O";
-                cont = "O";
+                disableB();
             }
         }
 
@@ -181,6 +187,7 @@ public class Finestra extends  JFrame implements ActionListener {
 
     private void nuovaPartita() {
         salvaCsv();
+
         button1.setText("");
         button2.setText("");
         button3.setText("");
@@ -192,15 +199,7 @@ public class Finestra extends  JFrame implements ActionListener {
         button9.setText("");
         cont = "";
 
-        button1.setEnabled(true);
-        button2.setEnabled(true);
-        button3.setEnabled(true);
-        button4.setEnabled(true);
-        button5.setEnabled(true);
-        button6.setEnabled(true);
-        button7.setEnabled(true);
-        button8.setEnabled(true);
-        button9.setEnabled(true);
+        enableB();
     }
 
     public void salvaCsv(){
@@ -222,6 +221,47 @@ public class Finestra extends  JFrame implements ActionListener {
                 "\n" +button1.getText() + SEPARATOR + button2.getText() + SEPARATOR + button3.getText() +
                 "\n" + button4.getText() + SEPARATOR + button5.getText() + SEPARATOR + button6.getText() +
                 "\n" + button7.getText() + SEPARATOR + button8.getText() + SEPARATOR + button9.getText() + "\n\n";
+    }
+
+    public void disableB(){
+        button1.setEnabled(false);
+        button2.setEnabled(false);
+        button3.setEnabled(false);
+        button4.setEnabled(false);
+        button5.setEnabled(false);
+        button6.setEnabled(false);
+        button7.setEnabled(false);
+        button8.setEnabled(false);
+        button9.setEnabled(false);
+    }
+
+    public void enableB(){
+        button1.setEnabled(true);
+        button2.setEnabled(true);
+        button3.setEnabled(true);
+        button4.setEnabled(true);
+        button5.setEnabled(true);
+        button6.setEnabled(true);
+        button7.setEnabled(true);
+        button8.setEnabled(true);
+        button9.setEnabled(true);
+    }
+
+    public void computer(){
+        if (cont == "O"){
+            JOptionPane.showMessageDialog(this, "Non hai inserito nessuna X");
+            exit();
+        } else{
+            cntComputer++;
+            if ( cntComputer == 1){
+
+            }
+        }
+    }
+
+    private double getRandomIntegerBetweenRange(int min, int max) {
+        double x = (int)(Math.random()*((max-min)+1))+min;
+        return x;
     }
 
     public static void main(String[] args)
