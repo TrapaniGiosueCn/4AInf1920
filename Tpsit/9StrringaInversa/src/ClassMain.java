@@ -1,17 +1,16 @@
 public class ClassMain extends  Thread {
+    public static int DELAY = 0;
+
     public static void main(String[] args) {
-        String frase = "Prova1";
 
-        Buffer b = new Buffer(frase, frase.length()-1);
-        for (int i=0; i<frase.length()-1; i++){
-            ViewString vs = new ViewString(b);
-                vs.start();
-                try {
-                    vs.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        String str = InputOutputUtility.leggiNome("Inserrire stringa: ");
+
+        ViewChar character = new ViewChar(str, 0);
+        character.start();
+        try {
+            character.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-
     }
+}
