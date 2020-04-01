@@ -1,0 +1,3 @@
+C:/Users/giosu/OneDrive/Documenti/4AInf1920-master/IdeaProjects/4AInf1920/4AInf1920/Tpsit/10SommatoreThread/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/giosu/OneDrive/Documenti/4AInf1920-master/IdeaProjects/4AInf1920/4AInf1920/Tpsit/10SommatoreThread/cmake-build-debug/CMakeFiles/untitled.dir
+C:/Users/giosu/OneDrive/Documenti/4AInf1920-master/IdeaProjects/4AInf1920/4AInf1920/Tpsit/10SommatoreThread/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/giosu/OneDrive/Documenti/4AInf1920-master/IdeaProjects/4AInf1920/4AInf1920/Tpsit/10SommatoreThread/main.c
+pthread.h
+-
+stdio.h
+-
+unistd.h
+-
+string.h
+-
+stdlib.h
+-
+
