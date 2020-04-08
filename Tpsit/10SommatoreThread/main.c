@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
     //dichiarazione della variabile pthraed_id di tipo pthraed_t
     pthread_t pthread_id;
 
-    printf("Creando l'ambiente : %d e %d\n", getpid(), sommatore.som1, sommatore.som2);
+    printf("Creando l'ambiente : %d e %d\n", sommatore.som1, sommatore.som2);
 
     //dichiarazione della variabile nel caso la creazione dell'ambiente non riuscisse ad essere fatta
     int err= pthread_create(&pthread_id, NULL, sommatore_thread, (void *)&sommatore);
