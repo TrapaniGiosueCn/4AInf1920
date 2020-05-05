@@ -3,10 +3,10 @@ package it.itis.cuneo;
 public class Corridore extends Thread {
     private int numero;
 
-    public Numero() {
+    public Corridore() {
     }
 
-    public Numero(int numero) {
+    public Corridore(int numero) {
         this.numero = numero;
     }
 
